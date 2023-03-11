@@ -21,6 +21,6 @@ ENV FLASK_APP=app.py
 ENV FLASK_DEBUG=true
 RUN pip install gunicorn==20.1.0
 
-EXPOSE 5001
+EXPOSE $PORT
 
 CMD ["gunicorn", "--log-level", $LOG_LEVEL, "-w", "2", "--timeout", "120", "--bind", "0.0.0.0:$PORT", "wsgi:app"]
