@@ -162,3 +162,11 @@ frontend/*.sw?
 application/vectors/
 
 **/inputs
+
+**/indexes
+
+**/temp
+
+**/yarn.lock
+
+node_modules/
